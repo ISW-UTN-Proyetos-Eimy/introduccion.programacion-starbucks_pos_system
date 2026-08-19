@@ -79,7 +79,8 @@ public class MenuAccess extends javax.swing.JFrame {
 
         lblBienvenido.setFont(new java.awt.Font("Perpetua", 1, 18)); // NOI18N
         lblBienvenido.setForeground(new java.awt.Color(255, 255, 255));
-        lblBienvenido.setText("Bienvenido");
+        lblBienvenido.setText("Bienvenido:");
+        lblBienvenido.setToolTipText("");
 
         lbStb.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_cafeteria/recursos/iconStb.png"))); // NOI18N
 
