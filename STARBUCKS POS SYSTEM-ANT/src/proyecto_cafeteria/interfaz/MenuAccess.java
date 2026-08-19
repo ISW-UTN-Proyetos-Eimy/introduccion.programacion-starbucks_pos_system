@@ -20,7 +20,7 @@ public class MenuAccess extends javax.swing.JFrame {
     public MenuAccess() {
         initComponents();       
         setExtendedState(javax.swing.JFrame.MAXIMIZED_BOTH);
-       
+        setAlwaysOnTop(false);
 
         Usuario usuarioLogin = Usuario.getInstance();
         lblBienvenido.setText(" Bienvenido : " + usuarioLogin.getNombreUsuario());
@@ -41,117 +41,132 @@ public class MenuAccess extends javax.swing.JFrame {
         btnComprar = new javax.swing.JButton();
         btnFacturar = new javax.swing.JButton();
         btnInventario = new javax.swing.JButton();
-        btnCierreCaja = new javax.swing.JButton();
         lblBienvenido = new javax.swing.JLabel();
+        btnCierreCaja = new javax.swing.JButton();
         lbStb = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        lblstarbucksIcon = new javax.swing.JLabel();
+        btnSalir = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("POS STARBUCKS");
+        setAlwaysOnTop(true);
         setBackground(new java.awt.Color(84, 57, 54));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setPreferredSize(new java.awt.Dimension(1290, 1080));
 
         pnlLateral.setBackground(new java.awt.Color(3, 102, 53));
-        pnlLateral.setPreferredSize(new java.awt.Dimension(600, 500));
+        pnlLateral.setPreferredSize(new java.awt.Dimension(2000, 1300));
 
-        lblNameStarbucks.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 54)); // NOI18N
+        lblNameStarbucks.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 200)); // NOI18N
         lblNameStarbucks.setForeground(new java.awt.Color(255, 255, 255));
         lblNameStarbucks.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblNameStarbucks.setText("STARBUCKS");
 
         btnComprar.setFont(new java.awt.Font("Monospaced", 0, 24)); // NOI18N
-        btnComprar.setText("Comprar");
+        btnComprar.setForeground(new java.awt.Color(2, 102, 53));
+        btnComprar.setText("🛒 Comprar");
+        btnComprar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnComprar.addActionListener(this::btnComprarActionPerformed);
 
         btnFacturar.setFont(new java.awt.Font("Monospaced", 0, 24)); // NOI18N
-        btnFacturar.setText("Facturar");
+        btnFacturar.setForeground(new java.awt.Color(2, 102, 53));
+        btnFacturar.setText("📄 Facturar");
+        btnFacturar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnFacturar.addActionListener(this::btnFacturarActionPerformed);
 
         btnInventario.setFont(new java.awt.Font("Monospaced", 0, 24)); // NOI18N
-        btnInventario.setText("Inventario");
+        btnInventario.setForeground(new java.awt.Color(2, 102, 53));
+        btnInventario.setText("📋 Inventario");
+        btnInventario.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnInventario.addActionListener(this::btnInventarioActionPerformed);
-
-        btnCierreCaja.setFont(new java.awt.Font("Monospaced", 0, 24)); // NOI18N
-        btnCierreCaja.setText("Cierre de Caja");
-        btnCierreCaja.addActionListener(this::btnCierreCajaActionPerformed);
 
         lblBienvenido.setFont(new java.awt.Font("Perpetua", 1, 18)); // NOI18N
         lblBienvenido.setForeground(new java.awt.Color(255, 255, 255));
+        lblBienvenido.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblBienvenido.setText("Bienvenido:");
         lblBienvenido.setToolTipText("");
 
-        lbStb.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_cafeteria/recursos/iconStb.png"))); // NOI18N
+        btnCierreCaja.setFont(new java.awt.Font("Monospaced", 0, 24)); // NOI18N
+        btnCierreCaja.setForeground(new java.awt.Color(2, 102, 53));
+        btnCierreCaja.setText("Cierre de Caja");
+        btnCierreCaja.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnCierreCaja.addActionListener(this::btnCierreCajaActionPerformed);
 
-        jButton1.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
-        jButton1.setText("Salir");
-        jButton1.addActionListener(this::jButton1ActionPerformed);
+        lbStb.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_cafeteria/recursos/stb2.png"))); // NOI18N
+
+        btnSalir.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
+        btnSalir.setForeground(new java.awt.Color(2, 102, 53));
+        btnSalir.setText("Salir");
+        btnSalir.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnSalir.addActionListener(this::btnSalirActionPerformed);
 
         javax.swing.GroupLayout pnlLateralLayout = new javax.swing.GroupLayout(pnlLateral);
         pnlLateral.setLayout(pnlLateralLayout);
         pnlLateralLayout.setHorizontalGroup(
             pnlLateralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlLateralLayout.createSequentialGroup()
+                .addGap(357, 357, 357)
+                .addGroup(pnlLateralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblBienvenido, javax.swing.GroupLayout.PREFERRED_SIZE, 295, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lbStb))
+                .addGap(39, 39, 39)
                 .addGroup(pnlLateralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnlLateralLayout.createSequentialGroup()
-                        .addGap(148, 148, 148)
-                        .addGroup(pnlLateralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(btnCierreCaja, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnInventario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnFacturar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblNameStarbucks)
-                            .addComponent(btnComprar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(pnlLateralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(btnInventario, javax.swing.GroupLayout.DEFAULT_SIZE, 248, Short.MAX_VALUE)
+                            .addComponent(btnComprar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(95, 95, 95)
+                        .addGroup(pnlLateralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(btnCierreCaja, javax.swing.GroupLayout.DEFAULT_SIZE, 281, Short.MAX_VALUE)
+                            .addComponent(btnFacturar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(pnlLateralLayout.createSequentialGroup()
-                        .addGap(169, 169, 169)
-                        .addComponent(lbStb))
-                    .addGroup(pnlLateralLayout.createSequentialGroup()
-                        .addGap(242, 242, 242)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(151, Short.MAX_VALUE))
+                        .addGap(440, 440, 440)
+                        .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlLateralLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(lblBienvenido, javax.swing.GroupLayout.PREFERRED_SIZE, 295, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(127, 127, 127))
+                .addContainerGap(465, Short.MAX_VALUE)
+                .addComponent(lblNameStarbucks)
+                .addGap(417, 417, 417))
         );
         pnlLateralLayout.setVerticalGroup(
             pnlLateralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlLateralLayout.createSequentialGroup()
-                .addGap(93, 93, 93)
+                .addGap(83, 83, 83)
                 .addComponent(lblNameStarbucks)
-                .addGap(42, 42, 42)
-                .addComponent(lbStb)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
-                .addComponent(lblBienvenido, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(btnComprar)
-                .addGap(35, 35, 35)
-                .addComponent(btnFacturar)
-                .addGap(29, 29, 29)
-                .addComponent(btnInventario)
-                .addGap(34, 34, 34)
-                .addComponent(btnCierreCaja)
-                .addGap(34, 34, 34)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(145, 145, 145))
+                .addGroup(pnlLateralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlLateralLayout.createSequentialGroup()
+                        .addGap(57, 57, 57)
+                        .addComponent(lbStb)
+                        .addGap(103, 103, 103)
+                        .addComponent(lblBienvenido, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(pnlLateralLayout.createSequentialGroup()
+                        .addGap(237, 237, 237)
+                        .addGroup(pnlLateralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnInventario, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnFacturar, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(59, 59, 59)
+                        .addGroup(pnlLateralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(btnComprar, javax.swing.GroupLayout.DEFAULT_SIZE, 71, Short.MAX_VALUE)
+                            .addComponent(btnCierreCaja, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(80, 80, 80)
+                        .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(296, Short.MAX_VALUE))
         );
 
         lblBienvenido.getAccessibleContext().setAccessibleName("lblBienvenido");
 
         getContentPane().add(pnlLateral, java.awt.BorderLayout.LINE_START);
 
-        lblstarbucksIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_cafeteria/recursos/STARBUCKicon.png"))); // NOI18N
-        getContentPane().add(lblstarbucksIcon, java.awt.BorderLayout.CENTER);
-
         getAccessibleContext().setAccessibleDescription("");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnCierreCajaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCierreCajaActionPerformed
-        CierreCaja pantalla = new CierreCaja();
-        pantalla.setVisible(true);
-    }//GEN-LAST:event_btnCierreCajaActionPerformed
+    private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_btnSalirActionPerformed
 
     private void btnInventarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInventarioActionPerformed
         Inventario pantalla = new Inventario();
@@ -168,9 +183,13 @@ public class MenuAccess extends javax.swing.JFrame {
         pantalla.setVisible(true);
     }//GEN-LAST:event_btnComprarActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void btnCierreCajaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCierreCajaActionPerformed
+        CierreCaja pantalla = new CierreCaja();
+        pantalla.setVisible(true);
+    }//GEN-LAST:event_btnCierreCajaActionPerformed
+
+        
+        // TODO add your handling code here:                                       
 
     /**
      * @param args the command line arguments
@@ -194,7 +213,7 @@ public class MenuAccess extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new MenuAccess().setVisible(true));
+      java.awt.EventQueue.invokeLater(() -> new MenuAccess().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -202,11 +221,10 @@ public class MenuAccess extends javax.swing.JFrame {
     private javax.swing.JButton btnComprar;
     private javax.swing.JButton btnFacturar;
     private javax.swing.JButton btnInventario;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnSalir;
     private javax.swing.JLabel lbStb;
     private javax.swing.JLabel lblBienvenido;
     private javax.swing.JLabel lblNameStarbucks;
-    private javax.swing.JLabel lblstarbucksIcon;
     private javax.swing.JPanel pnlLateral;
     // End of variables declaration//GEN-END:variables
 }

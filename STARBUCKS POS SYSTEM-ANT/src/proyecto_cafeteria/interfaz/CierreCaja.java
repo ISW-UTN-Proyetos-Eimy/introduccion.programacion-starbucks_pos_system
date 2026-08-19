@@ -68,9 +68,7 @@ public class CierreCaja extends javax.swing.JFrame {
     private void salidaCajaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salidaCajaActionPerformed
         // TODO add your handling code here:
         //Para volver al menu principal
-        MenuAccess menu = new MenuAccess();
-                 menu.setVisible(true);
-                 this.dispose();
+        this.dispose();
     }//GEN-LAST:event_salidaCajaActionPerformed
 
     /**
