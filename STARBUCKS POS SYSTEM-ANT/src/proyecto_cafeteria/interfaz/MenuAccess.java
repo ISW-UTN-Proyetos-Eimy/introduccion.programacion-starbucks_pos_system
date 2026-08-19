@@ -36,7 +36,6 @@ public class MenuAccess extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        buttonGroup1 = new javax.swing.ButtonGroup();
         pnlLateral = new javax.swing.JPanel();
         lblNameStarbucks = new javax.swing.JLabel();
         btnComprar = new javax.swing.JButton();
@@ -44,8 +43,9 @@ public class MenuAccess extends javax.swing.JFrame {
         btnInventario = new javax.swing.JButton();
         btnCierreCaja = new javax.swing.JButton();
         lblBienvenido = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        lbStb = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        lblstarbucksIcon = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("POS STARBUCKS");
@@ -81,7 +81,7 @@ public class MenuAccess extends javax.swing.JFrame {
         lblBienvenido.setForeground(new java.awt.Color(255, 255, 255));
         lblBienvenido.setText("Bienvenido");
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_cafeteria/recursos/iconStb.png"))); // NOI18N
+        lbStb.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_cafeteria/recursos/iconStb.png"))); // NOI18N
 
         jButton1.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
         jButton1.setText("Salir");
@@ -93,52 +93,54 @@ public class MenuAccess extends javax.swing.JFrame {
             pnlLateralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlLateralLayout.createSequentialGroup()
                 .addGroup(pnlLateralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnlLateralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(pnlLateralLayout.createSequentialGroup()
-                            .addContainerGap()
-                            .addComponent(lblBienvenido, javax.swing.GroupLayout.PREFERRED_SIZE, 295, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, pnlLateralLayout.createSequentialGroup()
-                            .addGap(148, 148, 148)
-                            .addGroup(pnlLateralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(btnCierreCaja, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btnInventario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btnFacturar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(lblNameStarbucks)
-                                .addComponent(btnComprar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                    .addGroup(pnlLateralLayout.createSequentialGroup()
+                        .addGap(148, 148, 148)
+                        .addGroup(pnlLateralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(btnCierreCaja, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnInventario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnFacturar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblNameStarbucks)
+                            .addComponent(btnComprar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(pnlLateralLayout.createSequentialGroup()
                         .addGap(169, 169, 169)
-                        .addComponent(jLabel1)))
+                        .addComponent(lbStb))
+                    .addGroup(pnlLateralLayout.createSequentialGroup()
+                        .addGap(242, 242, 242)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(151, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlLateralLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(243, 243, 243))
+                .addComponent(lblBienvenido, javax.swing.GroupLayout.PREFERRED_SIZE, 295, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(127, 127, 127))
         );
         pnlLateralLayout.setVerticalGroup(
             pnlLateralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlLateralLayout.createSequentialGroup()
                 .addGap(93, 93, 93)
                 .addComponent(lblNameStarbucks)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(42, 42, 42)
+                .addComponent(lbStb)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
                 .addComponent(lblBienvenido, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(31, 31, 31)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 137, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addComponent(btnComprar)
-                .addGap(51, 51, 51)
+                .addGap(35, 35, 35)
                 .addComponent(btnFacturar)
-                .addGap(41, 41, 41)
+                .addGap(29, 29, 29)
                 .addComponent(btnInventario)
-                .addGap(43, 43, 43)
+                .addGap(34, 34, 34)
                 .addComponent(btnCierreCaja)
-                .addGap(39, 39, 39)
+                .addGap(34, 34, 34)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(156, 156, 156))
+                .addGap(145, 145, 145))
         );
 
         lblBienvenido.getAccessibleContext().setAccessibleName("lblBienvenido");
 
         getContentPane().add(pnlLateral, java.awt.BorderLayout.LINE_START);
+
+        lblstarbucksIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proyecto_cafeteria/recursos/STARBUCKicon.png"))); // NOI18N
+        getContentPane().add(lblstarbucksIcon, java.awt.BorderLayout.CENTER);
 
         getAccessibleContext().setAccessibleDescription("");
 
@@ -199,11 +201,11 @@ public class MenuAccess extends javax.swing.JFrame {
     private javax.swing.JButton btnComprar;
     private javax.swing.JButton btnFacturar;
     private javax.swing.JButton btnInventario;
-    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel lbStb;
     private javax.swing.JLabel lblBienvenido;
     private javax.swing.JLabel lblNameStarbucks;
+    private javax.swing.JLabel lblstarbucksIcon;
     private javax.swing.JPanel pnlLateral;
     // End of variables declaration//GEN-END:variables
 }

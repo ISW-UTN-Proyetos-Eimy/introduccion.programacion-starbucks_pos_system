@@ -128,8 +128,7 @@ public class CompraRegistro extends javax.swing.JFrame {
 
     private void salidaRegistroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salidaRegistroActionPerformed
         // TODO add your handling code here:
-         MenuAccess menu = new MenuAccess();
-                 menu.setVisible(true);
+         
                  this.dispose();
     }//GEN-LAST:event_salidaRegistroActionPerformed
 

@@ -17,15 +17,16 @@ public class Inventario extends javax.swing.JFrame {
      */
     public Inventario() {
         initComponents();
+        setLocationRelativeTo(null);
         
-        nombrelabel.setText(ProyectoCafeteria1.productos[0].getNombre());
-        stocklabel.setText("" + ProyectoCafeteria1.productos[0].getStock());
-        nombrelabel2.setText(ProyectoCafeteria1.productos[1].getNombre());
-        stocklabel2.setText("" + ProyectoCafeteria1.productos[1].getStock());
-        nombrelabel3.setText(ProyectoCafeteria1.productos[2].getNombre());
-        stocklabel3.setText("" + ProyectoCafeteria1.productos[2].getStock());
-        nombrelabel4.setText(ProyectoCafeteria1.productos[3].getNombre());
-        stocklabel4.setText("" + ProyectoCafeteria1.productos[3].getStock());
+        lbcafé.setText(ProyectoCafeteria1.productos[0].getNombre());
+        lbstock1.setText("" + ProyectoCafeteria1.productos[0].getStock());
+        lbReposteria.setText(ProyectoCafeteria1.productos[1].getNombre());
+        lbstock2.setText("" + ProyectoCafeteria1.productos[1].getStock());
+        lbRefrescos.setText(ProyectoCafeteria1.productos[2].getNombre());
+        lbstock3.setText("" + ProyectoCafeteria1.productos[2].getStock());
+        lbRetail.setText(ProyectoCafeteria1.productos[3].getNombre());
+        lbstock4.setText("" + ProyectoCafeteria1.productos[3].getStock());
     }
 
     /**
@@ -37,122 +38,145 @@ public class Inventario extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jSpinner1 = new javax.swing.JSpinner();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        salidaInventario = new javax.swing.JButton();
-        nombrelabel = new javax.swing.JLabel();
-        stocklabel = new javax.swing.JLabel();
-        nombrelabel2 = new javax.swing.JLabel();
-        nombrelabel3 = new javax.swing.JLabel();
-        nombrelabel4 = new javax.swing.JLabel();
-        stocklabel2 = new javax.swing.JLabel();
-        stocklabel3 = new javax.swing.JLabel();
-        stocklabel4 = new javax.swing.JLabel();
+        lbInventario = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
+        jSeparator2 = new javax.swing.JSeparator();
+        lbPRODUCTOS = new javax.swing.JLabel();
+        lbSTOCK = new javax.swing.JLabel();
+        Salida = new javax.swing.JButton();
+        lbcafé = new javax.swing.JLabel();
+        lbReposteria = new javax.swing.JLabel();
+        lbRefrescos = new javax.swing.JLabel();
+        lbRetail = new javax.swing.JLabel();
+        lbstock1 = new javax.swing.JLabel();
+        lbstock2 = new javax.swing.JLabel();
+        lbstock3 = new javax.swing.JLabel();
+        lbstock4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Inventario_ POS_Starbucks");
+        setBackground(new java.awt.Color(245, 241, 232));
+        setPreferredSize(new java.awt.Dimension(900, 600));
 
-        jLabel1.setText("Inventario");
+        lbInventario.setFont(new java.awt.Font("Segoe UI Black", 0, 24)); // NOI18N
+        lbInventario.setForeground(new java.awt.Color(3, 102, 53));
+        lbInventario.setText("INVENTARIO");
+        lbInventario.setToolTipText("");
 
-        jLabel2.setText("Productos");
+        lbPRODUCTOS.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        lbPRODUCTOS.setForeground(new java.awt.Color(69, 47, 9));
+        lbPRODUCTOS.setText("PRODUCTOS");
 
-        jLabel3.setText("Stock");
+        lbSTOCK.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        lbSTOCK.setForeground(new java.awt.Color(69, 47, 9));
+        lbSTOCK.setText("STOCK");
 
-        salidaInventario.setText("Salir");
-        salidaInventario.addActionListener(this::salidaInventarioActionPerformed);
+        Salida.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        Salida.setForeground(new java.awt.Color(3, 102, 53));
+        Salida.setText("Cerrar");
+        Salida.addActionListener(this::SalidaActionPerformed);
 
-        nombrelabel.setText("jLabel4");
+        lbcafé.setFont(new java.awt.Font("Galgony", 0, 20)); // NOI18N
+        lbcafé.setText("Café");
 
-        stocklabel.setText("jLabel4");
+        lbReposteria.setFont(new java.awt.Font("Galgony", 0, 20)); // NOI18N
+        lbReposteria.setText("Repostería");
 
-        nombrelabel2.setText("jLabel4");
+        lbRefrescos.setFont(new java.awt.Font("Galgony", 0, 20)); // NOI18N
+        lbRefrescos.setText("Refrescos");
 
-        nombrelabel3.setText("jLabel5");
+        lbRetail.setFont(new java.awt.Font("Galgony", 0, 20)); // NOI18N
+        lbRetail.setText("Retail");
 
-        nombrelabel4.setText("jLabel6");
+        lbstock1.setFont(new java.awt.Font("Galgony", 0, 20)); // NOI18N
+        lbstock1.setText("0");
 
-        stocklabel2.setText("jLabel7");
+        lbstock2.setFont(new java.awt.Font("Galgony", 0, 20)); // NOI18N
+        lbstock2.setText("0");
 
-        stocklabel3.setText("jLabel8");
+        lbstock3.setFont(new java.awt.Font("Galgony", 0, 20)); // NOI18N
+        lbstock3.setText("0");
 
-        stocklabel4.setText("jLabel9");
+        lbstock4.setFont(new java.awt.Font("Galgony", 0, 20)); // NOI18N
+        lbstock4.setText("0");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(140, 140, 140)
-                        .addComponent(salidaInventario))
+                        .addGap(198, 198, 198)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lbRetail)
+                            .addComponent(lbRefrescos)
+                            .addComponent(lbReposteria)
+                            .addComponent(lbcafé))
+                        .addGap(323, 323, 323)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(lbstock4)
+                            .addComponent(lbstock3)
+                            .addComponent(lbstock2, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lbstock1, javax.swing.GroupLayout.Alignment.TRAILING)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(161, 161, 161)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(366, 366, 366)
+                        .addComponent(lbInventario))
+                    .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 1297, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 1748, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(168, 168, 168)
+                        .addComponent(lbPRODUCTOS, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(288, 288, 288)
+                        .addComponent(lbSTOCK, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(387, 387, 387)
+                .addComponent(Salida, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(63, 63, 63)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(nombrelabel, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 115, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(stocklabel, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(nombrelabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 79, Short.MAX_VALUE)
-                            .addComponent(nombrelabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(nombrelabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(stocklabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(stocklabel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(stocklabel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(90, 90, 90))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addComponent(jLabel1)
+                .addGap(17, 17, 17)
+                .addComponent(lbInventario)
+                .addGap(18, 18, 18)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3))
-                .addGap(18, 18, 18)
+                    .addComponent(lbPRODUCTOS)
+                    .addComponent(lbSTOCK))
+                .addGap(11, 11, 11)
+                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(28, 28, 28)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(nombrelabel)
-                    .addComponent(stocklabel))
-                .addGap(18, 18, 18)
+                    .addComponent(lbcafé)
+                    .addComponent(lbstock1))
+                .addGap(56, 56, 56)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(nombrelabel2)
-                    .addComponent(stocklabel2))
-                .addGap(18, 18, 18)
+                    .addComponent(lbReposteria)
+                    .addComponent(lbstock2))
+                .addGap(57, 57, 57)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(nombrelabel3)
-                    .addComponent(stocklabel3))
-                .addGap(18, 18, 18)
+                    .addComponent(lbRefrescos)
+                    .addComponent(lbstock3))
+                .addGap(60, 60, 60)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(nombrelabel4)
-                    .addComponent(stocklabel4))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
-                .addComponent(salidaInventario)
-                .addGap(33, 33, 33))
+                    .addComponent(lbRetail)
+                    .addComponent(lbstock4))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 95, Short.MAX_VALUE)
+                .addComponent(Salida, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(31, 31, 31))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void salidaInventarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salidaInventarioActionPerformed
+    private void SalidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SalidaActionPerformed
         // TODO add your handling code here:
-        MenuAccess menu = new MenuAccess();
-                 menu.setVisible(true);
-                 this.dispose();
-    }//GEN-LAST:event_salidaInventarioActionPerformed
+        this.dispose();
+    }//GEN-LAST:event_SalidaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -180,18 +204,19 @@ public class Inventario extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JSpinner jSpinner1;
-    private javax.swing.JLabel nombrelabel;
-    private javax.swing.JLabel nombrelabel2;
-    private javax.swing.JLabel nombrelabel3;
-    private javax.swing.JLabel nombrelabel4;
-    private javax.swing.JButton salidaInventario;
-    private javax.swing.JLabel stocklabel;
-    private javax.swing.JLabel stocklabel2;
-    private javax.swing.JLabel stocklabel3;
-    private javax.swing.JLabel stocklabel4;
+    private javax.swing.JButton Salida;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JLabel lbInventario;
+    private javax.swing.JLabel lbPRODUCTOS;
+    private javax.swing.JLabel lbRefrescos;
+    private javax.swing.JLabel lbReposteria;
+    private javax.swing.JLabel lbRetail;
+    private javax.swing.JLabel lbSTOCK;
+    private javax.swing.JLabel lbcafé;
+    private javax.swing.JLabel lbstock1;
+    private javax.swing.JLabel lbstock2;
+    private javax.swing.JLabel lbstock3;
+    private javax.swing.JLabel lbstock4;
     // End of variables declaration//GEN-END:variables
 }

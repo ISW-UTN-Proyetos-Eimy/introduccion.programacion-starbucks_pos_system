@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
-  <NonVisualComponents>
-    <Component class="javax.swing.JSpinner" name="jSpinner1">
-    </Component>
-  </NonVisualComponents>
+<Form version="1.9" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="title" type="java.lang.String" value="Inventario_ POS_Starbucks"/>
+    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+      <Color blue="e8" green="f1" red="f5" type="rgb"/>
+    </Property>
+    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[900, 600]"/>
+    </Property>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -27,150 +30,203 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="140" max="-2" attributes="0"/>
-                      <Component id="salidaInventario" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="198" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lbRetail" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbRefrescos" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbReposteria" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbcafé" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="323" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="lbstock4" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbstock3" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbstock2" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbstock1" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="161" max="-2" attributes="0"/>
-                      <Component id="jLabel1" min="-2" pref="63" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="366" max="-2" attributes="0"/>
+                      <Component id="lbInventario" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="jSeparator1" alignment="0" min="-2" pref="1297" max="-2" attributes="0"/>
+                  <Component id="jSeparator2" alignment="0" min="-2" pref="1748" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="168" max="-2" attributes="0"/>
+                      <Component id="lbPRODUCTOS" min="-2" pref="132" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="288" max="-2" attributes="0"/>
+                      <Component id="lbSTOCK" min="-2" pref="88" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel2" min="-2" pref="61" max="-2" attributes="0"/>
-                          <Component id="nombrelabel" min="-2" pref="79" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace pref="115" max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel3" min="-2" pref="45" max="-2" attributes="0"/>
-                          <Component id="stocklabel" min="-2" pref="53" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                          <Component id="nombrelabel3" pref="79" max="32767" attributes="0"/>
-                          <Component id="nombrelabel4" max="32767" attributes="0"/>
-                          <Component id="nombrelabel2" max="32767" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="stocklabel2" alignment="1" min="-2" pref="53" max="-2" attributes="0"/>
-                          <Component id="stocklabel3" alignment="1" min="-2" pref="53" max="-2" attributes="0"/>
-                          <Component id="stocklabel4" alignment="1" min="-2" pref="53" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-              </Group>
-              <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="387" max="-2" attributes="0"/>
+              <Component id="Salida" min="-2" pref="107" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+              <Component id="lbInventario" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="jSeparator1" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lbPRODUCTOS" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lbSTOCK" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+              <Component id="jSeparator2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="nombrelabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="stocklabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lbcafé" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lbstock1" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="nombrelabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="stocklabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lbReposteria" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lbstock2" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="nombrelabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="stocklabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lbRefrescos" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lbstock3" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="nombrelabel4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="stocklabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lbRetail" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lbstock4" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="29" max="32767" attributes="0"/>
-              <Component id="salidaInventario" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+              <EmptySpace pref="95" max="32767" attributes="0"/>
+              <Component id="Salida" min="-2" pref="38" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="jLabel1">
+    <Component class="javax.swing.JLabel" name="lbInventario">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Inventario"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI Black" size="24" style="0"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="35" green="66" red="3" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="INVENTARIO"/>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel2">
+    <Component class="javax.swing.JSeparator" name="jSeparator1">
+    </Component>
+    <Component class="javax.swing.JSeparator" name="jSeparator2">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbPRODUCTOS">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Productos"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Monospaced" size="24" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="9" green="2f" red="45" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="PRODUCTOS"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel3">
+    <Component class="javax.swing.JLabel" name="lbSTOCK">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Stock"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Monospaced" size="24" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="9" green="2f" red="45" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="STOCK"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="salidaInventario">
+    <Component class="javax.swing.JButton" name="Salida">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Salir"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="12" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="35" green="66" red="3" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Cerrar"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="salidaInventarioActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SalidaActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="nombrelabel">
+    <Component class="javax.swing.JLabel" name="lbcaf&#xe9;">
       <Properties>
-        <Property name="text" type="java.lang.String" value="jLabel4"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Galgony" size="20" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Caf&#xe9;"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="stocklabel">
+    <Component class="javax.swing.JLabel" name="lbReposteria">
       <Properties>
-        <Property name="text" type="java.lang.String" value="jLabel4"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Galgony" size="20" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Reposter&#xed;a"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="nombrelabel2">
+    <Component class="javax.swing.JLabel" name="lbRefrescos">
       <Properties>
-        <Property name="text" type="java.lang.String" value="jLabel4"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Galgony" size="20" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Refrescos"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="nombrelabel3">
+    <Component class="javax.swing.JLabel" name="lbRetail">
       <Properties>
-        <Property name="text" type="java.lang.String" value="jLabel5"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Galgony" size="20" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Retail"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="nombrelabel4">
+    <Component class="javax.swing.JLabel" name="lbstock1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="jLabel6"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Galgony" size="20" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="0"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="stocklabel2">
+    <Component class="javax.swing.JLabel" name="lbstock2">
       <Properties>
-        <Property name="text" type="java.lang.String" value="jLabel7"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Galgony" size="20" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="0"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="stocklabel3">
+    <Component class="javax.swing.JLabel" name="lbstock3">
       <Properties>
-        <Property name="text" type="java.lang.String" value="jLabel8"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Galgony" size="20" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="0"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="stocklabel4">
+    <Component class="javax.swing.JLabel" name="lbstock4">
       <Properties>
-        <Property name="text" type="java.lang.String" value="jLabel9"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Galgony" size="20" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="0"/>
       </Properties>
     </Component>
   </SubComponents>

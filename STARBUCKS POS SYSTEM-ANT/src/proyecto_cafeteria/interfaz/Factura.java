@@ -127,10 +127,9 @@ public class Factura extends javax.swing.JFrame {
 
     private void salirfacturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salirfacturaActionPerformed
         // TODO add your handling code here:
-        //Para volver al menu principal
-        MenuAccess menu = new MenuAccess();
-                 menu.setVisible(true);
-                 this.dispose();
+        //Para cerrar la ventana sin abrir de nuevo el menú
+        
+        this.dispose();
     }//GEN-LAST:event_salirfacturaActionPerformed
 
     /**
