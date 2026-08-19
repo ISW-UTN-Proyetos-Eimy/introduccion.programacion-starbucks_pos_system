@@ -87,7 +87,7 @@ public class MenuAccess extends javax.swing.JFrame {
 
         btnCierreCaja.setFont(new java.awt.Font("Monospaced", 0, 24)); // NOI18N
         btnCierreCaja.setForeground(new java.awt.Color(2, 102, 53));
-        btnCierreCaja.setText("Cierre de Caja");
+        btnCierreCaja.setText("📠 Cierre de Caja");
         btnCierreCaja.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnCierreCaja.addActionListener(this::btnCierreCajaActionPerformed);
 
